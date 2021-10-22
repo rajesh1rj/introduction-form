@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="intro">
+        <h1 id="title1">Introduction Form</h1>
+        <p>Self Introduction Form</p>
+        </div>
+        <form id="survey-form">
+            <label id="name-label" for="name"><p>Name:</p></label>
+            <input id="name" type="text" placeholder="Enter Your Name" required>
+
+            <label id="email-label" for="email"><p>Email:</p></label>
+            <input id="email" type="email" placeholder="Enter Your Email" required>
+
+            <label id="number-label" for="number"><p>Age:</p></label>
+            <input id="number" type="number" placeholder="Enter Your Age" min="12" max="80" required>
+
+            <p>Where are you from ?</p>
+            <select id="dropdown">
+                <option value="default">Myanmar</option>
+                <option value="China">China</option>
+                <option value="India">India</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Other">Other</option>
+            </select><br><br>
+            <div id="radio">
+               <label id="radio button" for="Gender">Gender:</label><br>
+               <input type="radio" name="gender" value="male" selected>Male<br>
+               <input type="radio" name="gender" value="female">Female<br>
+               <input type="radio" name="gender" value="other">Other<br>
+            </div>
+            <div id="checked">
+               <label id="check" for="job">What do you do ?</label><br>
+               <input type="checkbox" name="job" value="work in a company">work in a company<br>
+               <input type="checkbox" name="job" value="work in a IT company">Work in a IT company <br>
+               <input type="checkbox" name="job" value="work in a telecom company">work in a telecom company<br>
+               <input type="checkbox" name="job" value="work in a social media">work in a social media <br>
+               <input type="checkbox" name="job" value="Other">Other <br><br>
+            </div>
+            <textarea id="title" type="text" class="input-field" name="comment" rows="10" cols="40" placeholder="leave more information in comment"></textarea><br><br>
+            <button id="submit" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
